@@ -1,0 +1,247 @@
+{
+  "color-brand-primary": {
+    "value": "#cc092f",
+    "description": "Cor primária da marca, utilizada em elementos ativos e principais da interface",
+    "category": "brand"
+  },
+  "color-brand-primary-alt": {
+    "value": "#fce7ec",
+    "description": "Variação alternativa da cor primária, utilizada em estados pressed/hover",
+    "category": "brand"
+  },
+  "color-brand-secondary": {
+    "value": "#3b69ff",
+    "description": "Cor secundária da marca, utilizada em elementos ativos secundários",
+    "category": "brand"
+  },
+  "color-brand-secondary-alt": {
+    "value": "#dae2ff",
+    "description": "Variação alternativa da cor secundária, utilizada em estados pressed/hover",
+    "category": "brand"
+  },
+  "color-background-default": {
+    "value": "#f0f0f0",
+    "description": "Cor de fundo padrão da tela",
+    "category": "background"
+  },
+  "color-background-container": {
+    "value": "#fcfcfc",
+    "description": "Cor de fundo para containers e modais",
+    "category": "background"
+  },
+  "color-background-surface": {
+    "value": "#dddddd",
+    "description": "Cor para elementos não interativos acima de containers e modais, e elementos interativos desabilitados",
+    "category": "background"
+  },
+  "color-background-field": {
+    "value": "#eef0f5",
+    "description": "Cor de fundo para elementos interativos como cards, inputs, droplists e calendar",
+    "category": "background"
+  },
+  "color-background-field-disabled": {
+    "value": "#d2d2d2",
+    "description": "Cor de fundo para campos desabilitados",
+    "category": "background"
+  },
+  "color-text-default": {
+    "value": "#1f1f1f",
+    "description": "Cor padrão para textos principais",
+    "category": "text"
+  },
+  "color-text-alt": {
+    "value": "#7a7a7a",
+    "description": "Cor para legendas e textos secundários",
+    "category": "text"
+  },
+  "color-text-disabled": {
+    "value": "#909090",
+    "description": "Cor para conteúdo desabilitado",
+    "category": "text"
+  },
+  "color-text-on-primary": {
+    "value": "#fbfbfb",
+    "description": "Cor de texto aplicada sobre a cor primária",
+    "category": "text"
+  },
+  "color-text-on-secondary": {
+    "value": "#3b69ff",
+    "description": "Cor de texto aplicada sobre a cor secundária",
+    "category": "text"
+  },
+  "color-text-on-alt": {
+    "value": "#f6f6f6",
+    "description": "Cor de texto aplicada sobre cores sólidas",
+    "category": "text"
+  },
+  "color-text-primary": {
+    "value": "#cc092f",
+    "description": "Cor para links e conteúdos que utilizam a cor primária",
+    "category": "text"
+  },
+  "color-text-secondary": {
+    "value": "#3b69ff",
+    "description": "Cor de texto secundária (ainda sem uso definido)",
+    "category": "text"
+  },
+  "color-border-default": {
+    "value": "rgba(31, 31, 31, 0.4)",
+    "description": "Cor padrão para bordas e linhas",
+    "category": "border"
+  },
+  "color-border-alt": {
+    "value": "rgba(31, 31, 31, 0.12)",
+    "description": "Cor para bordas desabilitadas e linhas separadoras",
+    "category": "border"
+  },
+  "color-status-positive": {
+    "value": "#09ab47",
+    "description": "Cor para status positivo - texto e elementos ativos",
+    "category": "status"
+  },
+  "color-status-positive-alt": {
+    "value": "#e6faee",
+    "description": "Cor de fundo para status positivo",
+    "category": "status"
+  },
+  "color-status-negative": {
+    "value": "#e1173f",
+    "description": "Cor para status negativo - texto e elementos ativos",
+    "category": "status"
+  },
+  "color-status-negative-alt": {
+    "value": "#fce7ec",
+    "description": "Cor de fundo para status negativo",
+    "category": "status"
+  },
+  "color-status-warning": {
+    "value": "#e2a320",
+    "description": "Cor para status de aviso - texto e elementos ativos",
+    "category": "status"
+  },
+  "color-status-warning-alt": {
+    "value": "#fefbd5",
+    "description": "Cor de fundo para status de aviso",
+    "category": "status"
+  },
+  "color-status-info": {
+    "value": "#3b69ff",
+    "description": "Cor para status informativo - texto e elementos ativos",
+    "category": "status"
+  },
+  "color-status-info-alt": {
+    "value": "#ebf0ff",
+    "description": "Cor de fundo para status informativo",
+    "category": "status"
+  },
+  "color-chart-1": {
+    "value": "#cc092f",
+    "description": "Primeira cor para elementos gráficos e charts",
+    "category": "chart"
+  },
+  "color-chart-2": {
+    "value": "#b81570",
+    "description": "Segunda cor para elementos gráficos e charts",
+    "category": "chart"
+  },
+  "color-chart-3": {
+    "value": "#9d0d21",
+    "description": "Terceira cor para elementos gráficos e charts",
+    "category": "chart"
+  },
+  "color-chart-4": {
+    "value": "#d63a59",
+    "description": "Quarta cor para elementos gráficos e charts",
+    "category": "chart"
+  },
+  "color-chart-5": {
+    "value": "#fce7ec",
+    "description": "Quinta cor para elementos gráficos e charts",
+    "category": "chart"
+  },
+  "color-chart-gradient": {
+    "value": "linear-gradient(90deg, #a438d5 20%, #36ffe7 79.167%)",
+    "description": "Gradiente para elementos gráficos e charts",
+    "category": "gradient"
+  },
+  "color-support-black": {
+    "value": "#000000",
+    "description": "Cor preta para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-gray": {
+    "value": "#a3a5ab",
+    "description": "Cor cinza para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-grayish": {
+    "value": "#d6d9e0",
+    "description": "Cor cinza claro para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-white": {
+    "value": "#ffffff",
+    "description": "Cor branca para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-red": {
+    "value": "#e81000",
+    "description": "Cor vermelha para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-pink": {
+    "value": "#d6409f",
+    "description": "Cor rosa para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-purple": {
+    "value": "#9c27b0",
+    "description": "Cor roxa para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-blue": {
+    "value": "#0084ff",
+    "description": "Cor azul para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-orange": {
+    "value": "#ffb300",
+    "description": "Cor laranja para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-yellow": {
+    "value": "#f5d050",
+    "description": "Cor amarela para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-green": {
+    "value": "#4caf50",
+    "description": "Cor verde para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-support-turquoise": {
+    "value": "#3f9c9c",
+    "description": "Cor turquesa para avatares, chips e outros elementos decorativos",
+    "category": "support"
+  },
+  "color-platform-backdrop-modal": {
+    "value": "rgba(31, 31, 31, 0.8)",
+    "description": "Cor de fundo para backdrop de modais",
+    "category": "platform"
+  },
+  "color-platform-background-login": {
+    "value": "#08050f",
+    "description": "Cor de fundo específica para telas de login",
+    "category": "platform"
+  },
+  "color-platform-background-navbar": {
+    "value": "#f6f6f6",
+    "description": "Cor de fundo para navbar da plataforma",
+    "category": "platform"
+  },
+  "color-platform-motion-load": {
+    "value": "linear-gradient(90deg, rgba(64, 63, 77, 0.5) 14.063%, rgba(51, 50, 61, 0.45) 71.354%, rgba(51, 50, 61, 0.45) 100%)",
+    "description": "Gradiente para animações de carregamento",
+    "category": "gradient"
+  }
+}
