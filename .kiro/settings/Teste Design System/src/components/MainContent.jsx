@@ -7,6 +7,7 @@ import TokensPage from '../pages/TokensPage';
 import ColorsPage from '../pages/foundations/ColorsPage';
 import TypographyPage from '../pages/foundations/TypographyPage';
 import SpacingPage from '../pages/foundations/SpacingPage';
+import ElevationPage from '../pages/foundations/ElevationPage';
 import ComponentPage from '../pages/components/ComponentPage';
 import PatternPage from '../pages/patterns/PatternPage';
 import ResourcePage from '../pages/resources/ResourcePage';
@@ -31,6 +32,7 @@ const MainContent = ({ activeSection }) => {
       case 'spacing':
         return <SpacingPage />;
       case 'elevation':
+        return <ElevationPage />;
       case 'grid':
       case 'icons':
       case 'motion':

@@ -2,6 +2,16 @@ import React from 'react';
 import { colorTokens } from '../../data/tokens';
 
 const ColorsPage = () => {
+  // Função para criar fundo quadriculado para transparências
+  const getCheckerboardBackground = () => {
+    return `
+      linear-gradient(45deg, #f0f0f0 25%, transparent 25%), 
+      linear-gradient(-45deg, #f0f0f0 25%, transparent 25%), 
+      linear-gradient(45deg, transparent 75%, #f0f0f0 75%), 
+      linear-gradient(-45deg, transparent 75%, #f0f0f0 75%)
+    `;
+  };
+
   const colorCategories = {
     brand: { title: 'Cores da Marca', description: 'Cores principais que representam nossa identidade visual' },
     background: { title: 'Fundos', description: 'Cores para diferentes tipos de superfícies e containers' },
@@ -38,6 +48,7 @@ const ColorsPage = () => {
         <div className="section-content">
           <div className="token-grid">
             <div className="token-card">
+              <div className="token-preview" style={{ backgroundColor: 'var(--color-brand-primary)' }}></div>
               <h3 className="token-name">Acessibilidade</h3>
               <p className="token-description">
                 Todas as combinações de cores atendem aos critérios WCAG 2.1 AA para contraste.
@@ -45,6 +56,7 @@ const ColorsPage = () => {
             </div>
             
             <div className="token-card">
+              <div className="token-preview" style={{ backgroundColor: 'var(--color-brand-secondary)' }}></div>
               <h3 className="token-name">Semântica</h3>
               <p className="token-description">
                 Cada cor tem um propósito específico e significado consistente em toda a interface.
@@ -52,6 +64,7 @@ const ColorsPage = () => {
             </div>
             
             <div className="token-card">
+              <div className="token-preview" style={{ backgroundColor: 'var(--color-status-positive)' }}></div>
               <h3 className="token-name">Flexibilidade</h3>
               <p className="token-description">
                 Sistema preparado para temas claros, escuros e personalizações futuras.

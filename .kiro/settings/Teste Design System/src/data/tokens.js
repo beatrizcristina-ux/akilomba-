@@ -265,3 +265,53 @@ export const typographyTokens = {
     description: "Estilo Overline - texto sobrescrito"
   }
 };
+
+export const elevationTokens = {
+  // Elevações baseadas no Design System Majoris (Figma)
+  "elevation-low": {
+    value: "0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.2)",
+    description: "Elevação baixa - Pressed / '0' / Floor",
+    usage: "Estados pressed, elementos no nível do chão",
+    level: 1
+  },
+  "elevation-default": {
+    value: "0px 2px 3px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px -4px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.08)",
+    description: "Elevação padrão - Default",
+    usage: "Cards, containers e elementos padrão da interface",
+    level: 2
+  },
+  "elevation-high": {
+    value: "0px 8px 8px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 5px 5px 0px rgba(0, 0, 0, 0.12)",
+    description: "Elevação alta - Active",
+    usage: "Estados ativos, elementos em foco, dropdowns",
+    level: 3
+  },
+  "elevation-modal": {
+    value: "0px 16px 24px 0px rgba(0, 0, 0, 0.14), 0px 6px 30px 0px rgba(0, 0, 0, 0.12), 0px 8px 10px 0px rgba(0, 0, 0, 0.2)",
+    description: "Elevação modal - Modal",
+    usage: "Modais, overlays e elementos que ficam acima de tudo",
+    level: 4
+  },
+
+  // Tokens individuais para customização
+  "shadow-color-primary": {
+    value: "rgba(0, 0, 0, 0.08)",
+    description: "Cor de sombra primária - baixa opacidade"
+  },
+  "shadow-color-secondary": {
+    value: "rgba(0, 0, 0, 0.12)",
+    description: "Cor de sombra secundária - média opacidade"
+  },
+  "shadow-color-tertiary": {
+    value: "rgba(0, 0, 0, 0.14)",
+    description: "Cor de sombra terciária - alta opacidade"
+  },
+  "shadow-color-accent": {
+    value: "rgba(0, 0, 0, 0.16)",
+    description: "Cor de sombra de destaque"
+  },
+  "shadow-color-strong": {
+    value: "rgba(0, 0, 0, 0.2)",
+    description: "Cor de sombra forte - máxima opacidade"
+  }
+};

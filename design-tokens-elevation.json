@@ -1,0 +1,146 @@
+{
+  "elevation": {
+    "levels": {
+      "low": {
+        "value": "0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.2)",
+        "type": "boxShadow",
+        "description": "Elevação baixa - Pressed / '0' / Floor",
+        "usage": "Estados pressed, elementos no nível do chão",
+        "level": 1,
+        "shadows": [
+          {
+            "x": 0,
+            "y": 1,
+            "blur": 1,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.14)"
+          },
+          {
+            "x": 0,
+            "y": 1,
+            "blur": 3,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.2)"
+          }
+        ]
+      },
+      "default": {
+        "value": "0px 2px 3px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px -4px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.08)",
+        "type": "boxShadow",
+        "description": "Elevação padrão - Default",
+        "usage": "Cards, containers e elementos padrão da interface",
+        "level": 2,
+        "shadows": [
+          {
+            "x": 0,
+            "y": 2,
+            "blur": 3,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.08)"
+          },
+          {
+            "x": 0,
+            "y": 1,
+            "blur": 3,
+            "spread": -4,
+            "color": "rgba(0, 0, 0, 0.16)"
+          },
+          {
+            "x": 0,
+            "y": 2,
+            "blur": 3,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.08)"
+          }
+        ]
+      },
+      "high": {
+        "value": "0px 8px 8px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 5px 5px 0px rgba(0, 0, 0, 0.12)",
+        "type": "boxShadow",
+        "description": "Elevação alta - Active",
+        "usage": "Estados ativos, elementos em foco, dropdowns",
+        "level": 3,
+        "shadows": [
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 8,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.08)"
+          },
+          {
+            "x": 0,
+            "y": 3,
+            "blur": 6,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.1)"
+          },
+          {
+            "x": 0,
+            "y": 5,
+            "blur": 5,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.12)"
+          }
+        ]
+      },
+      "modal": {
+        "value": "0px 16px 24px 0px rgba(0, 0, 0, 0.14), 0px 6px 30px 0px rgba(0, 0, 0, 0.12), 0px 8px 10px 0px rgba(0, 0, 0, 0.2)",
+        "type": "boxShadow",
+        "description": "Elevação modal - Modal",
+        "usage": "Modais, overlays e elementos que ficam acima de tudo",
+        "level": 4,
+        "shadows": [
+          {
+            "x": 0,
+            "y": 16,
+            "blur": 24,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.14)"
+          },
+          {
+            "x": 0,
+            "y": 6,
+            "blur": 30,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.12)"
+          },
+          {
+            "x": 0,
+            "y": 8,
+            "blur": 10,
+            "spread": 0,
+            "color": "rgba(0, 0, 0, 0.2)"
+          }
+        ]
+      }
+    },
+    "shadowColors": {
+      "primary": {
+        "value": "rgba(0, 0, 0, 0.08)",
+        "type": "color",
+        "description": "Cor de sombra primária - baixa opacidade"
+      },
+      "secondary": {
+        "value": "rgba(0, 0, 0, 0.12)",
+        "type": "color",
+        "description": "Cor de sombra secundária - média opacidade"
+      },
+      "tertiary": {
+        "value": "rgba(0, 0, 0, 0.14)",
+        "type": "color",
+        "description": "Cor de sombra terciária - alta opacidade"
+      },
+      "accent": {
+        "value": "rgba(0, 0, 0, 0.16)",
+        "type": "color",
+        "description": "Cor de sombra de destaque"
+      },
+      "strong": {
+        "value": "rgba(0, 0, 0, 0.2)",
+        "type": "color",
+        "description": "Cor de sombra forte - máxima opacidade"
+      }
+    }
+  }
+}

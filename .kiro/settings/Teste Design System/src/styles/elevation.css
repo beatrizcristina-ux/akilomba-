@@ -1,0 +1,82 @@
+/* Design System Majoris - Elevation Utilities */
+
+/* Níveis de elevação */
+.elevation-low {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.elevation-default {
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px -4px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.elevation-high {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-modal {
+  box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.14), 0px 6px 30px 0px rgba(0, 0, 0, 0.12), 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Classes para estados interativos */
+.elevation-interactive {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.elevation-interactive:hover {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.elevation-interactive:active {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Classes para componentes específicos */
+.card {
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px -4px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
+}
+
+.card:hover {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.button-pressed {
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown,
+.tooltip {
+  box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+}
+
+.modal,
+.overlay {
+  box-shadow: 0px 16px 24px 0px rgba(0, 0, 0, 0.14), 0px 6px 30px 0px rgba(0, 0, 0, 0.12), 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* Variáveis CSS para uso em JavaScript */
+:root {
+  --elevation-low: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  --elevation-default: 0px 2px 3px 0px rgba(0, 0, 0, 0.08), 0px 1px 3px -4px rgba(0, 0, 0, 0.16), 0px 2px 3px 0px rgba(0, 0, 0, 0.08);
+  --elevation-high: 0px 8px 8px 0px rgba(0, 0, 0, 0.08), 0px 3px 6px 0px rgba(0, 0, 0, 0.1), 0px 5px 5px 0px rgba(0, 0, 0, 0.12);
+  --elevation-modal: 0px 16px 24px 0px rgba(0, 0, 0, 0.14), 0px 6px 30px 0px rgba(0, 0, 0, 0.12), 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+  
+  --shadow-color-primary: rgba(0, 0, 0, 0.08);
+  --shadow-color-secondary: rgba(0, 0, 0, 0.12);
+  --shadow-color-tertiary: rgba(0, 0, 0, 0.14);
+  --shadow-color-accent: rgba(0, 0, 0, 0.16);
+  --shadow-color-strong: rgba(0, 0, 0, 0.2);
+}
+
+/* Utilitários para animações de elevação */
+.elevation-transition {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.elevation-transition-fast {
+  transition: box-shadow 0.1s ease-in-out;
+}
+
+.elevation-transition-slow {
+  transition: box-shadow 0.3s ease-in-out;
+}
