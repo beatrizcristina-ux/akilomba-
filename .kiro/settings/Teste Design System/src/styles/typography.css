@@ -1,0 +1,167 @@
+/* Design System Majoris - Typography Utilities */
+
+/* Família tipográfica */
+.font-bradesco {
+  font-family: 'Bradesco Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+}
+
+.font-mono {
+  font-family: 'Monaco', 'Menlo', monospace;
+}
+
+/* Tamanhos de fonte */
+.text-10 { font-size: 10px; }
+.text-12 { font-size: 12px; }
+.text-14 { font-size: 14px; }
+.text-16 { font-size: 16px; }
+.text-20 { font-size: 20px; }
+.text-24 { font-size: 24px; }
+.text-28 { font-size: 28px; }
+.text-32 { font-size: 32px; }
+
+/* Pesos de fonte */
+.font-regular { font-weight: 400; }
+.font-medium { font-weight: 500; }
+.font-semibold { font-weight: 600; }
+.font-bold { font-weight: 700; }
+
+/* Altura de linha */
+.leading-tight { line-height: 1.2; }
+.leading-normal { line-height: 1.25; }
+.leading-relaxed { line-height: 1.5; }
+.leading-loose { line-height: 1.6; }
+
+/* Espaçamento de letras */
+.tracking-tight { letter-spacing: 0.75px; }
+.tracking-normal { letter-spacing: 1.4px; }
+
+/* Estilos tipográficos compostos */
+.typography-number-1 {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+}
+
+.typography-number-2 {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+}
+
+.typography-headline-1 {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+}
+
+.typography-headline-2 {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+}
+
+.typography-subtitle {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+}
+
+.typography-body-1 {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+}
+
+.typography-body-2 {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 1.4px;
+}
+
+.typography-button {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: 1.4px;
+}
+
+.typography-caption {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 1.4px;
+}
+
+.typography-overline {
+  font-family: 'Bradesco Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 1.4px;
+}
+
+/* Variações de estilo */
+.text-link {
+  color: #d6409f;
+  text-decoration: underline;
+  letter-spacing: 0.75px;
+}
+
+.text-bold {
+  font-weight: 700;
+  color: #d6409f;
+}
+
+.text-italic {
+  font-style: italic;
+  color: #d6409f;
+}
+
+.text-strikethrough {
+  text-decoration: line-through;
+  color: #d6409f;
+}
+
+/* Variáveis CSS para uso em JavaScript */
+:root {
+  --font-family-bradesco: 'Bradesco Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  --font-family-mono: 'Monaco', 'Menlo', monospace;
+  
+  --font-size-10: 10px;
+  --font-size-12: 12px;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-20: 20px;
+  --font-size-24: 24px;
+  --font-size-28: 28px;
+  --font-size-32: 32px;
+  
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.25;
+  --line-height-relaxed: 1.5;
+  --line-height-loose: 1.6;
+  
+  --letter-spacing-tight: 0.75px;
+  --letter-spacing-normal: 1.4px;
+}

@@ -147,12 +147,121 @@ export const spacingTokens = {
 };
 
 export const typographyTokens = {
-  "font-family-primary": { value: "-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif", description: "Família tipográfica principal" },
-  "font-family-mono": { value: "'Monaco', 'Menlo', monospace", description: "Família tipográfica monoespaçada" },
-  "font-size-xs": { value: "12px", description: "Tamanho de fonte extra pequeno" },
-  "font-size-sm": { value: "14px", description: "Tamanho de fonte pequeno" },
-  "font-size-md": { value: "16px", description: "Tamanho de fonte médio" },
-  "font-size-lg": { value: "18px", description: "Tamanho de fonte grande" },
-  "font-size-xl": { value: "24px", description: "Tamanho de fonte extra grande" },
-  "font-size-xxl": { value: "32px", description: "Tamanho de fonte extra extra grande" }
+  // Família tipográfica
+  "font-family-primary": { 
+    value: "'Bradesco Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif", 
+    description: "Família tipográfica principal - Bradesco Sans" 
+  },
+  "font-family-mono": { 
+    value: "'Monaco', 'Menlo', monospace", 
+    description: "Família tipográfica monoespaçada" 
+  },
+
+  // Tamanhos de fonte (baseados no design do Figma)
+  "font-size-10": { value: "10px", description: "Overline" },
+  "font-size-12": { value: "12px", description: "Caption" },
+  "font-size-14": { value: "14px", description: "Body 2, Button" },
+  "font-size-16": { value: "16px", description: "Body 1, Subtitle" },
+  "font-size-20": { value: "20px", description: "Headline 2" },
+  "font-size-24": { value: "24px", description: "Headline 1" },
+  "font-size-28": { value: "28px", description: "Number 2" },
+  "font-size-32": { value: "32px", description: "Number 1" },
+
+  // Pesos de fonte
+  "font-weight-regular": { value: "400", description: "Peso regular (Italic)" },
+  "font-weight-medium": { value: "500", description: "Peso médio (Medium)" },
+  "font-weight-semibold": { value: "600", description: "Peso semi-negrito (SemiBold - Button)" },
+  "font-weight-bold": { value: "700", description: "Peso negrito (Bold)" },
+
+  // Line heights
+  "line-height-tight": { value: "1.2", description: "Altura de linha compacta - títulos" },
+  "line-height-normal": { value: "1.25", description: "Altura de linha normal - botões" },
+  "line-height-relaxed": { value: "1.5", description: "Altura de linha relaxada - texto corrido" },
+  "line-height-loose": { value: "1.6", description: "Altura de linha solta - Body 2" },
+
+  // Letter spacing
+  "letter-spacing-tight": { value: "0.75px", description: "Espaçamento de letra compacto" },
+  "letter-spacing-normal": { value: "1.4px", description: "Espaçamento de letra normal" },
+
+  // Tokens compostos para cada estilo tipográfico
+  "typography-number-1": {
+    fontSize: "32px",
+    fontWeight: "700",
+    lineHeight: "1.2",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Number 1 - maior hierarquia"
+  },
+  "typography-number-2": {
+    fontSize: "28px",
+    fontWeight: "700",
+    lineHeight: "1.2",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Number 2"
+  },
+  "typography-headline-1": {
+    fontSize: "24px",
+    fontWeight: "700",
+    lineHeight: "1.2",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Headline 1"
+  },
+  "typography-headline-2": {
+    fontSize: "20px",
+    fontWeight: "700",
+    lineHeight: "1.2",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Headline 2"
+  },
+  "typography-subtitle": {
+    fontSize: "16px",
+    fontWeight: "700",
+    lineHeight: "1.5",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Subtitle"
+  },
+  "typography-body-1": {
+    fontSize: "16px",
+    fontWeight: "500",
+    lineHeight: "1.5",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Body 1 - texto principal"
+  },
+  "typography-body-2": {
+    fontSize: "14px",
+    fontWeight: "500",
+    lineHeight: "1.6",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Body 2 - texto secundário"
+  },
+  "typography-button": {
+    fontSize: "14px",
+    fontWeight: "600",
+    lineHeight: "1.25",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Button"
+  },
+  "typography-caption": {
+    fontSize: "12px",
+    fontWeight: "500",
+    lineHeight: "1.5",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Caption - legendas"
+  },
+  "typography-overline": {
+    fontSize: "10px",
+    fontWeight: "500",
+    lineHeight: "1.2",
+    letterSpacing: "1.4px",
+    fontFamily: "'Bradesco Sans', sans-serif",
+    description: "Estilo Overline - texto sobrescrito"
+  }
 };
