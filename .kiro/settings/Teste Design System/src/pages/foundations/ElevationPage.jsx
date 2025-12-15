@@ -1,7 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { elevationTokens } from '../../data/tokens';
 
 const ElevationPage = () => {
+  // Estado para controlar o modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   // Níveis de elevação baseados no Design System Majoris (Figma)
   const elevationLevels = [
     {
@@ -323,7 +326,9 @@ const ElevationPage = () => {
               padding: '24px',
               backgroundColor: 'var(--color-background-default)',
               borderRadius: '12px',
-              position: 'relative'
+              position: 'relative',
+              minHeight: '300px',
+              overflow: 'hidden'
             }}>
               {/* Card com elevação padrão */}
               <div style={{ 
@@ -350,21 +355,33 @@ const ElevationPage = () => {
                   Este card usa elevação padrão (nível 2)
                 </p>
                 
-                {/* Botão com elevação alta no hover */}
-                <button style={{ 
-                  backgroundColor: 'var(--color-brand-primary)',
-                  color: 'white',
-                  border: 'none',
-                  padding: '12px 24px',
-                  borderRadius: '6px',
-                  fontSize: '14px',
-                  fontWeight: '600',
-                  fontFamily: "'Bradesco Sans', sans-serif",
-                  cursor: 'pointer',
-                  boxShadow: elevationTokens['elevation-high'].value,
-                  marginRight: '12px'
-                }}>
-                  Botão Ativo
+                {/* Botão para abrir modal */}
+                <button 
+                  onClick={() => setIsModalOpen(true)}
+                  style={{ 
+                    backgroundColor: 'var(--color-brand-primary)',
+                    color: 'white',
+                    border: 'none',
+                    padding: '12px 24px',
+                    borderRadius: '6px',
+                    fontSize: '14px',
+                    fontWeight: '600',
+                    fontFamily: "'Bradesco Sans', sans-serif",
+                    cursor: 'pointer',
+                    boxShadow: elevationTokens['elevation-high'].value,
+                    marginRight: '12px',
+                    transition: 'all 0.2s ease-in-out'
+                  }}
+                  onMouseEnter={(e) => {
+                    e.target.style.transform = 'translateY(-1px)';
+                    e.target.style.boxShadow = elevationTokens['elevation-modal'].value;
+                  }}
+                  onMouseLeave={(e) => {
+                    e.target.style.transform = 'translateY(0)';
+                    e.target.style.boxShadow = elevationTokens['elevation-high'].value;
+                  }}
+                >
+                  Modal
                 </button>
                 
                 {/* Botão com elevação baixa (pressed) */}
@@ -384,53 +401,159 @@ const ElevationPage = () => {
                 </button>
               </div>
               
-              {/* Simulação de modal */}
-              <div style={{ 
-                position: 'absolute',
-                top: '50%',
-                left: '50%',
-                transform: 'translate(-50%, -50%)',
-                backgroundColor: 'var(--color-background-container)',
-                padding: '24px',
-                borderRadius: '12px',
-                boxShadow: elevationTokens['elevation-modal'].value,
-                minWidth: '300px',
-                textAlign: 'center'
-              }}>
-                <h5 style={{ 
-                  fontSize: '16px', 
-                  fontWeight: '700',
-                  margin: '0 0 12px 0',
-                  fontFamily: "'Bradesco Sans', sans-serif"
-                }}>
-                  Modal Example
-                </h5>
-                <p style={{ 
-                  fontSize: '14px', 
-                  color: 'var(--color-text-alt)', 
-                  margin: '0 0 16px 0',
-                  fontFamily: "'Bradesco Sans', sans-serif"
-                }}>
-                  Este modal usa elevação modal (nível 4)
-                </p>
-                <button style={{ 
-                  backgroundColor: 'var(--color-brand-primary)',
-                  color: 'white',
-                  border: 'none',
-                  padding: '8px 16px',
-                  borderRadius: '4px',
-                  fontSize: '12px',
-                  fontWeight: '600',
-                  fontFamily: "'Bradesco Sans', sans-serif",
-                  cursor: 'pointer'
-                }}>
-                  Fechar
-                </button>
-              </div>
+              {/* Overlay e Modal */}
+              {isModalOpen && (
+                <>
+                  {/* Overlay backdrop */}
+                  <div 
+                    style={{ 
+                      position: 'absolute',
+                      top: 0,
+                      left: 0,
+                      right: 0,
+                      bottom: 0,
+                      backgroundColor: 'var(--color-platform-backdrop-modal)',
+                      borderRadius: '12px',
+                      zIndex: 10
+                    }}
+                    onClick={() => setIsModalOpen(false)}
+                  />
+                  
+                  {/* Modal */}
+                  <div style={{ 
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
+                    backgroundColor: 'var(--color-background-container)',
+                    padding: '24px',
+                    borderRadius: '12px',
+                    boxShadow: elevationTokens['elevation-modal'].value,
+                    minWidth: '320px',
+                    maxWidth: '400px',
+                    textAlign: 'center',
+                    zIndex: 20,
+                    animation: 'modalFadeIn 0.2s ease-out'
+                  }}>
+                    {/* Botão fechar no canto superior direito */}
+                    <button
+                      onClick={() => setIsModalOpen(false)}
+                      style={{
+                        position: 'absolute',
+                        top: '12px',
+                        right: '12px',
+                        backgroundColor: 'transparent',
+                        border: 'none',
+                        fontSize: '18px',
+                        cursor: 'pointer',
+                        color: 'var(--color-text-alt)',
+                        width: '24px',
+                        height: '24px',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        borderRadius: '4px',
+                        transition: 'all 0.2s ease-in-out'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.backgroundColor = 'var(--color-background-field)';
+                        e.target.style.color = 'var(--color-text-default)';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = 'transparent';
+                        e.target.style.color = 'var(--color-text-alt)';
+                      }}
+                    >
+                      ×
+                    </button>
+                    
+                    <h5 style={{ 
+                      fontSize: '18px', 
+                      fontWeight: '700',
+                      margin: '0 0 12px 0',
+                      fontFamily: "'Bradesco Sans', sans-serif"
+                    }}>
+                      Modal Example
+                    </h5>
+                    <p style={{ 
+                      fontSize: '14px', 
+                      color: 'var(--color-text-alt)', 
+                      margin: '0 0 20px 0',
+                      fontFamily: "'Bradesco Sans', sans-serif",
+                      lineHeight: '1.5'
+                    }}>
+                      Este modal usa elevação modal (nível 4) e demonstra como a elevação funciona em condições reais de uso.
+                    </p>
+                    
+                    {/* Demonstração dos tokens */}
+                    <div style={{
+                      backgroundColor: 'var(--color-background-field)',
+                      padding: '12px',
+                      borderRadius: '8px',
+                      marginBottom: '20px',
+                      textAlign: 'left'
+                    }}>
+                      <p style={{
+                        fontSize: '12px',
+                        color: 'var(--color-text-alt)',
+                        margin: '0 0 4px 0',
+                        fontFamily: "'Bradesco Sans', sans-serif"
+                      }}>
+                        <strong>Token usado:</strong>
+                      </p>
+                      <code style={{
+                        fontSize: '11px',
+                        color: 'var(--color-brand-primary)',
+                        fontFamily: 'Monaco, Menlo, monospace'
+                      }}>
+                        elevation-modal
+                      </code>
+                    </div>
+                    
+                    <button 
+                      onClick={() => setIsModalOpen(false)}
+                      style={{ 
+                        backgroundColor: 'var(--color-brand-primary)',
+                        color: 'white',
+                        border: 'none',
+                        padding: '10px 20px',
+                        borderRadius: '6px',
+                        fontSize: '14px',
+                        fontWeight: '600',
+                        fontFamily: "'Bradesco Sans', sans-serif",
+                        cursor: 'pointer',
+                        transition: 'all 0.2s ease-in-out'
+                      }}
+                      onMouseEnter={(e) => {
+                        e.target.style.backgroundColor = '#b8082a';
+                      }}
+                      onMouseLeave={(e) => {
+                        e.target.style.backgroundColor = 'var(--color-brand-primary)';
+                      }}
+                    >
+                      Fechar
+                    </button>
+                  </div>
+                </>
+              )}
             </div>
           </div>
         </div>
       </div>
+      
+      {/* Estilos para animação do modal */}
+      <style jsx>{`
+        @keyframes modalFadeIn {
+          from {
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.9);
+          }
+          to {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+          }
+        }
+      `}</style>
     </div>
   );
 };

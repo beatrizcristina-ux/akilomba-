@@ -5,10 +5,16 @@ const SpacingPage = () => {
   const spacingExamples = [
     { token: 'spacing-xs', size: '4px', usage: 'Espaçamento mínimo entre elementos relacionados' },
     { token: 'spacing-sm', size: '8px', usage: 'Padding interno de componentes pequenos' },
-    { token: 'spacing-md', size: '16px', usage: 'Espaçamento padrão entre elementos' },
-    { token: 'spacing-lg', size: '24px', usage: 'Separação entre seções relacionadas' },
-    { token: 'spacing-xl', size: '32px', usage: 'Espaçamento entre seções principais' },
-    { token: 'spacing-xxl', size: '48px', usage: 'Separação entre blocos de conteúdo' }
+    { token: 'spacing-md', size: '12px', usage: 'Espaçamento entre elementos próximos' },
+    { token: 'spacing-lg', size: '16px', usage: 'Espaçamento padrão entre elementos' },
+    { token: 'spacing-xl', size: '20px', usage: 'Separação entre elementos relacionados' },
+    { token: 'spacing-2xl', size: '24px', usage: 'Separação entre seções relacionadas' },
+    { token: 'spacing-3xl', size: '28px', usage: 'Espaçamento entre grupos de elementos' },
+    { token: 'spacing-4xl', size: '32px', usage: 'Espaçamento entre seções principais' },
+    { token: 'spacing-5xl', size: '36px', usage: 'Separação entre blocos de conteúdo' },
+    { token: 'spacing-6xl', size: '40px', usage: 'Espaçamento entre seções principais grandes' },
+    { token: 'spacing-7xl', size: '44px', usage: 'Separação entre grandes blocos de conteúdo' },
+    { token: 'spacing-8xl', size: '48px', usage: 'Separação entre seções principais da página' }
   ];
 
   return (
@@ -17,8 +23,9 @@ const SpacingPage = () => {
         <h1 className="content-title">Espaçamentos</h1>
         <p className="content-subtitle">Sistema de espaçamentos e grid</p>
         <p className="content-description">
-          Nosso sistema de espaçamentos garante consistência visual e ritmo harmonioso 
-          em toda a interface, facilitando a leitura e navegação.
+          Spacing faz referência aos espaçamentos padrões adotados entre os elementos. 
+          É importante que sejam padronizados para que todos os elementos tenham um mesmo espaço entre si, 
+          criando organização dentro de cada tela. Nossos spacings seguem o padrão de distância de múltiplos de 4px.
         </p>
       </div>
 
@@ -27,35 +34,13 @@ const SpacingPage = () => {
         <div className="section-content">
           <div className="token-grid">
             <div className="token-card">
-              <div className="token-preview" style={{ 
-                backgroundColor: 'var(--color-brand-primary)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--color-text-on-primary)',
-                fontSize: '14px',
-                fontWeight: 'bold'
-              }}>
-                8px BASE
-              </div>
-              <h3 className="token-name">Base 8px</h3>
+              <h3 className="token-name">Base 4px</h3>
               <p className="token-description">
-                Sistema baseado em múltiplos de 8px para garantir alinhamento perfeito em grids.
+                Sistema baseado em múltiplos de 4px para garantir alinhamento perfeito e flexibilidade.
               </p>
             </div>
             
             <div className="token-card">
-              <div className="token-preview" style={{ 
-                backgroundColor: 'var(--color-brand-secondary)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--color-text-on-primary)',
-                fontSize: '14px',
-                fontWeight: 'bold'
-              }}>
-                RHYTHM
-              </div>
               <h3 className="token-name">Ritmo Visual</h3>
               <p className="token-description">
                 Progressão harmônica que cria ritmo e hierarquia visual consistente.
@@ -63,17 +48,6 @@ const SpacingPage = () => {
             </div>
             
             <div className="token-card">
-              <div className="token-preview" style={{ 
-                backgroundColor: 'var(--color-status-info)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: 'var(--color-text-on-primary)',
-                fontSize: '14px',
-                fontWeight: 'bold'
-              }}>
-                FLEXIBLE
-              </div>
               <h3 className="token-name">Flexibilidade</h3>
               <p className="token-description">
                 Adaptável a diferentes contextos e tamanhos de tela mantendo proporções.

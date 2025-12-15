@@ -1,0 +1,64 @@
+{
+  "spacing": {
+    "xs": {
+      "value": "4px",
+      "type": "spacing",
+      "description": "Extra small spacing - 4px"
+    },
+    "sm": {
+      "value": "8px", 
+      "type": "spacing",
+      "description": "Small spacing - 8px"
+    },
+    "md": {
+      "value": "12px",
+      "type": "spacing", 
+      "description": "Medium spacing - 12px"
+    },
+    "lg": {
+      "value": "16px",
+      "type": "spacing",
+      "description": "Large spacing - 16px"
+    },
+    "xl": {
+      "value": "20px",
+      "type": "spacing",
+      "description": "Extra large spacing - 20px"
+    },
+    "2xl": {
+      "value": "24px",
+      "type": "spacing",
+      "description": "2x extra large spacing - 24px"
+    },
+    "3xl": {
+      "value": "28px",
+      "type": "spacing",
+      "description": "3x extra large spacing - 28px"
+    },
+    "4xl": {
+      "value": "32px",
+      "type": "spacing",
+      "description": "4x extra large spacing - 32px"
+    },
+    "5xl": {
+      "value": "36px",
+      "type": "spacing",
+      "description": "5x extra large spacing - 36px"
+    },
+    "6xl": {
+      "value": "40px",
+      "type": "spacing",
+      "description": "6x extra large spacing - 40px"
+    },
+    "7xl": {
+      "value": "44px",
+      "type": "spacing",
+      "description": "7x extra large spacing - 44px"
+    },
+    "8xl": {
+      "value": "48px",
+      "type": "spacing",
+      "description": "8x extra large spacing - 48px"
+    }
+  }
+}

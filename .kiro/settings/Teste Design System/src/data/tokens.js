@@ -138,12 +138,68 @@ export const colorTokens = {
 };
 
 export const spacingTokens = {
-  "spacing-xs": { value: "4px", description: "Espaçamento extra pequeno" },
-  "spacing-sm": { value: "8px", description: "Espaçamento pequeno" },
-  "spacing-md": { value: "16px", description: "Espaçamento médio" },
-  "spacing-lg": { value: "24px", description: "Espaçamento grande" },
-  "spacing-xl": { value: "32px", description: "Espaçamento extra grande" },
-  "spacing-xxl": { value: "48px", description: "Espaçamento extra extra grande" }
+  // Tokens baseados no Design System Majoris (Figma)
+  // Sistema baseado em múltiplos de 4px para garantir alinhamento perfeito
+  "spacing-xs": { 
+    value: "4px", 
+    description: "Espaçamento mínimo - 4px",
+    usage: "Espaçamento mínimo entre elementos relacionados"
+  },
+  "spacing-sm": { 
+    value: "8px", 
+    description: "Espaçamento pequeno - 8px",
+    usage: "Padding interno de componentes pequenos"
+  },
+  "spacing-md": { 
+    value: "12px", 
+    description: "Espaçamento médio pequeno - 12px",
+    usage: "Espaçamento entre elementos próximos"
+  },
+  "spacing-lg": { 
+    value: "16px", 
+    description: "Espaçamento médio - 16px",
+    usage: "Espaçamento padrão entre elementos"
+  },
+  "spacing-xl": { 
+    value: "20px", 
+    description: "Espaçamento médio grande - 20px",
+    usage: "Separação entre elementos relacionados"
+  },
+  "spacing-2xl": { 
+    value: "24px", 
+    description: "Espaçamento grande - 24px",
+    usage: "Separação entre seções relacionadas"
+  },
+  "spacing-3xl": { 
+    value: "28px", 
+    description: "Espaçamento grande plus - 28px",
+    usage: "Espaçamento entre grupos de elementos"
+  },
+  "spacing-4xl": { 
+    value: "32px", 
+    description: "Espaçamento extra grande - 32px",
+    usage: "Espaçamento entre seções principais"
+  },
+  "spacing-5xl": { 
+    value: "36px", 
+    description: "Espaçamento extra grande plus - 36px",
+    usage: "Separação entre blocos de conteúdo"
+  },
+  "spacing-6xl": { 
+    value: "40px", 
+    description: "Espaçamento extra extra grande - 40px",
+    usage: "Espaçamento entre seções principais grandes"
+  },
+  "spacing-7xl": { 
+    value: "44px", 
+    description: "Espaçamento máximo médio - 44px",
+    usage: "Separação entre grandes blocos de conteúdo"
+  },
+  "spacing-8xl": { 
+    value: "48px", 
+    description: "Espaçamento máximo - 48px",
+    usage: "Separação entre seções principais da página"
+  }
 };
 
 export const typographyTokens = {
